@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Everything you need to know about satellite radio — how it works, what channels are available, compatible devices, subscription plans, and more."/>
+  <meta name="keywords" content="satellite radio, the satellite radio service, satellite radio, XM channels, XM subscription, how XM radio works"/>
+  <title>XMActive — Complete Guide to Satellite Radio</title>
+
+  <!-- Google Ads slot (paste your AdSense code here) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #04102b;
+      --navy2:   #0a1f4e;
+      --blue:    #0057e7;
+      --blue-lt: #e8f0fe;
+      --accent:  #00c2ff;
+      --ink:     #1a1a2e;
+      --ink2:    #4b5563;
+      --ink3:    #9ca3af;
+      --line:    #e5e7eb;
+      --bg:      #f8fafc;
+      --white:   #ffffff;
+      --radius:  12px;
+      --shadow:  0 2px 20px rgba(0,0,0,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* sans-serif utility */
+    .sans { font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; border-radius: var(--radius); }
+    h1,h2,h3,h4 { line-height: 1.2; font-family: 'Georgia', serif; font-weight: 700; color: var(--ink); }
+
+    /* ── FORCE WHITE HEADINGS ON DARK BACKGROUNDS ── */
+    .hero h1,
+    .hero h2,
+    .hero h3,
+    .hero h4,
+    .section-dark h1,
+    .section-dark h2,
+    .section-dark h3,
+    .section-dark h4,
+    .section-dark .section-title,
+    .section-dark .article-body h3 {
+      color: #ffffff !important;
+    }
+
+    /* Light sections — keep headings dark and readable */
+    .section-white h1,
+    .section-white h2,
+    .section-white h3,
+    .section-white h4,
+    .section-white .section-title,
+    .section-bg h1,
+    .section-bg h2,
+    .section-bg h3,
+    .section-bg h4,
+    .section-bg .section-title {
+      color: var(--navy) !important;
+    }
+
+    /* Article body h3 on light backgrounds */
+    .section-white .article-body h3,
+    .section-bg .article-body h3 {
+      color: var(--navy2) !important;
+    }
+
+    .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .container-narrow { width: 100%; max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── TOP BAR ── */
+    .topbar {
+      background: var(--navy);
+      color: #94a3b8;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      font-size: 0.8rem;
+      padding: 8px 0;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    .topbar span { color: var(--accent); font-weight: 600; }
+
+    /* ── NAV ── */
+    .site-nav {
+      background: var(--navy);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .nav-inner {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      height: 62px; gap: 16px;
+    }
+    .nav-logo {
+      color: #fff; font-size: 1.25rem; font-weight: 700;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      display: flex; align-items: center; gap: 10px;
+      letter-spacing: -0.01em;
+    }
+    .nav-logo .wave { color: var(--accent); font-size: 1.4rem; }
+    .nav-logo:hover { text-decoration: none; color: #fff; }
+    .nav-links { display: flex; gap: 2px; list-style: none; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .nav-links a { color: #94a3b8; font-size: 0.85rem; padding: 6px 12px; border-radius: 6px; transition: background 0.15s, color 0.15s; }
+    .nav-links a:hover { background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; }
+    .nav-burger { display: none; background: none; border: none; color: #fff; font-size: 1.4rem; cursor: pointer; }
+
+    /* ── IMAGE PLACEHOLDER ── */
+    .img-placeholder {
+      width: 100%;
+      background: linear-gradient(135deg, #e8f0fe 0%, #dbeafe 100%);
+      border: 2px dashed #93c5fd;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #3b82f6;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 20px;
+      min-height: 260px;
+    }
+    .img-placeholder .ph-icon { font-size: 2.5rem; }
+    .img-placeholder .ph-label { font-size: 1rem; font-weight: 700; color: #1d4ed8; }
+    .img-placeholder .ph-sub { font-size: 0.78rem; color: #60a5fa; font-weight: 400; }
+    .img-placeholder.tall { min-height: 380px; }
+    .img-placeholder.short { min-height: 180px; }
+
+    /* ── AD SLOT ── */
+    .ad-slot {
+      background: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      font-size: 0.78rem;
+      color: #94a3b8;
+      margin: 32px 0;
+    }
+    .ad-slot p { margin-bottom: 6px; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0a2a6e 100%);
+      color: #fff;
+      padding: 80px 0 70px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(0,194,255,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,194,255,0.15); border: 1px solid rgba(0,194,255,0.3);
+      color: var(--accent); font-size: 0.78rem; font-weight: 700;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 999px; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 18px; color: #ffffff !important; }
+    .hero h1 .accent { color: var(--accent); }
+    .hero p { color: #94a3b8; font-size: 1.05rem; line-height: 1.75; margin-bottom: 28px; max-width: 500px; }
+    .hero-stats {
+      display: flex; gap: 28px; flex-wrap: wrap;
+      padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .hstat .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); display: block; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .hstat .lbl { font-size: 0.78rem; color: #64748b; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+
+    /* ── SECTION STYLES ── */
+    .section { padding: 72px 0; }
+    .section-white { background: var(--white); }
+    .section-bg { background: var(--bg); }
+    .section-dark { background: var(--navy); color: #fff; }
+
+    .section-label {
+      display: inline-block;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--blue); background: var(--blue-lt);
+      padding: 4px 12px; border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .section-dark .section-label { background: rgba(0,194,255,0.15); color: var(--accent); }
+
+    .section-title { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 16px; }
+    .section-sub { color: var(--ink2); font-size: 1rem; max-width: 600px; margin-bottom: 40px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .section-dark .section-sub { color: #94a3b8; }
+
+    /* ── TWO-COL ── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .two-col.reverse { direction: rtl; }
+    .two-col.reverse > * { direction: ltr; }
+
+    /* ── ARTICLE BODY ── */
+    .article-body h3 { font-size: 1.2rem; margin: 28px 0 10px; color: var(--navy2); }
+    .article-body p { color: var(--ink2); margin-bottom: 16px; font-size: 0.97rem; line-height: 1.85; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .article-body ul, .article-body ol { padding-left: 22px; color: var(--ink2); font-size: 0.95rem; line-height: 2; margin-bottom: 16px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .article-body strong { color: var(--ink); }
+
+    /* ── CARDS ── */
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .cards-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .cards-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+
+    .card {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 26px;
+      box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.1); }
+    .card .c-icon { font-size: 2rem; margin-bottom: 14px; }
+    .card h3 { font-size: 1rem; margin-bottom: 8px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; color: var(--navy); }
+    .card p { font-size: 0.875rem; color: var(--ink2); line-height: 1.65; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    /* Cards inside dark section need white headings */
+    .section-dark .card h3 { color: var(--navy) !important; }
+
+    .channel-card {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 20px 18px;
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .channel-card .ch-num {
+      width: 44px; height: 44px; flex: 0 0 44px;
+      background: var(--navy); color: var(--accent);
+      border-radius: 8px; display: grid; place-items: center;
+      font-weight: 800; font-size: 0.85rem;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+    }
+    .channel-card h4 { font-size: 0.92rem; margin-bottom: 3px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; color: var(--navy); }
+    .channel-card p { font-size: 0.82rem; color: var(--ink2); margin: 0; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+
+    /* ── TIMELINE ── */
+    .timeline { position: relative; padding-left: 32px; }
+    .timeline::before { content: ''; position: absolute; left: 10px; top: 6px; bottom: 6px; width: 2px; background: var(--blue-lt); }
+    .tl-item { position: relative; margin-bottom: 32px; }
+    .tl-item::before {
+      content: ''; position: absolute; left: -26px; top: 6px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--blue); border: 3px solid #fff;
+      box-shadow: 0 0 0 2px var(--blue);
+    }
+    .tl-year { font-size: 0.78rem; font-weight: 700; color: var(--blue); font-family: 'Segoe UI', system-ui, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+    .tl-item h4 { font-size: 1rem; margin-bottom: 6px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; color: var(--navy); }
+    .tl-item p { font-size: 0.9rem; color: var(--ink2); font-family: 'Segoe UI', system-ui, Arial, sans-serif; line-height: 1.65; }
+
+    /* ── COMPARE TABLE ── */
+    .compare-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .compare-table th { background: var(--navy); color: #fff; padding: 14px 18px; text-align: left; font-size: 0.875rem; }
+    .compare-table td { padding: 13px 18px; border-bottom: 1px solid var(--line); font-size: 0.9rem; color: var(--ink2); }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: var(--bg); }
+    .chk { color: #16a34a; font-weight: 700; }
+    .crs { color: #dc2626; }
+
+    /* ── PLANS ── */
+    .plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .plan-card {
+      background: var(--white); border: 2px solid var(--line);
+      border-radius: var(--radius); padding: 30px 24px;
+      text-align: center; position: relative;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      transition: transform 0.2s;
+    }
+    .plan-card:hover { transform: translateY(-4px); }
+    .plan-card.featured { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,87,231,0.1); }
+    .plan-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--blue); color: #fff; font-size: 0.72rem; font-weight: 700;
+      padding: 4px 14px; border-radius: 999px; white-space: nowrap;
+    }
+    .plan-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--navy); }
+    .plan-card .plan-price { font-size: 2rem; font-weight: 800; color: var(--navy); margin: 14px 0 4px; }
+    .plan-card .plan-price span { font-size: 0.85rem; font-weight: 400; color: var(--ink2); }
+    .plan-card .plan-note { font-size: 0.78rem; color: var(--ink3); margin-bottom: 20px; }
+    .plan-card ul { list-style: none; text-align: left; margin-bottom: 24px; }
+    .plan-card li { font-size: 0.875rem; color: var(--ink2); padding: 5px 0; display: flex; gap: 8px; align-items: flex-start; }
+    .plan-card li::before { content: '✓'; color: #16a34a; font-weight: 700; flex: 0 0 auto; }
+    .btn-plan {
+      display: block; width: 100%; padding: 12px;
+      background: var(--blue); color: #fff; border-radius: 8px;
+      font-weight: 700; font-size: 0.9rem; text-align: center;
+      transition: background 0.2s; border: none; cursor: pointer; font-family: inherit;
+    }
+    .btn-plan:hover { background: #0040b0; text-decoration: none; color: #fff; }
+    .btn-plan.outline { background: transparent; border: 2px solid var(--line); color: var(--ink); }
+    .btn-plan.outline:hover { border-color: var(--blue); color: var(--blue); }
+    .price-disclaimer { font-size: 0.78rem; color: var(--ink3); text-align: center; margin-top: 16px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+
+    /* ── DEVICE GRID ── */
+    .device-tile {
+      background: var(--white); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 20px 16px;
+      text-align: center; transition: box-shadow 0.2s;
+    }
+    .device-tile:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.09); }
+    .device-tile .d-icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .device-tile h4 { font-size: 0.88rem; font-weight: 700; font-family: 'Segoe UI', system-ui, Arial, sans-serif; margin-bottom: 4px; color: var(--navy); }
+    .device-tile p { font-size: 0.78rem; color: var(--ink2); font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+
+    /* ── FAQ ── */
+    .faq-wrap { max-width: 760px; margin: 0 auto; }
+    .faq-item { border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; background: var(--white); }
+    .faq-q {
+      width: 100%; text-align: left; padding: 18px 20px;
+      background: none; border: none; font-size: 0.95rem;
+      font-weight: 600; color: var(--ink); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+    }
+    .faq-q .arrow { flex: 0 0 auto; transition: transform 0.25s; font-size: 0.8rem; color: var(--ink3); }
+    .faq-item.open .faq-q .arrow { transform: rotate(180deg); }
+    .faq-item.open { border-color: #93c5fd; }
+    .faq-a { display: none; padding: 0 20px 18px; font-size: 0.9rem; color: var(--ink2); line-height: 1.8; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .faq-a.open { display: block; }
+
+    /* ── PULLQUOTE ── */
+    .pullquote {
+      border-left: 4px solid var(--accent);
+      background: var(--blue-lt);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 28px 0;
+      font-size: 1.05rem;
+      color: var(--navy2);
+      font-style: italic;
+    }
+
+    /* ── INFO BOX ── */
+    .info-box {
+      background: #eff6ff; border: 1px solid #bfdbfe;
+      border-radius: var(--radius); padding: 18px 20px;
+      font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+      font-size: 0.88rem; color: #1e40af; line-height: 1.65;
+      margin: 20px 0;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer { background: var(--navy); color: #94a3b8; padding: 48px 0 24px; margin-top: 0; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 36px; }
+    .footer-brand p { font-size: 0.83rem; margin-top: 10px; max-width: 260px; line-height: 1.7; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .footer-col h4 { color: #fff; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.83rem; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .footer-col a:hover { color: #fff; text-decoration: none; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.07); padding-top: 20px; text-align: center; font-size: 0.78rem; color: #64748b; font-family: 'Segoe UI', system-ui, Arial, sans-serif; }
+    .footer-disclaimer { font-size: 0.75rem; color: #475569; margin-top: 10px; font-family: 'Segoe UI', system-ui, Arial, sans-serif; line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .two-col { grid-template-columns: 1fr; gap: 36px; }
+      .two-col.reverse { direction: ltr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .cards-grid-4 { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .cards-grid { grid-template-columns: 1fr 1fr; }
+      .plans-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 62px; left: 0; right: 0; background: var(--navy2); padding: 12px; }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 10px 14px; }
+      .nav-burger { display: block; }
+    }
+    @media (max-width: 540px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .cards-grid-2 { grid-template-columns: 1fr; }
+      .cards-grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .hero-stats { gap: 16px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar sans">
+  📡 <span>Informational Guide</span> — Everything You Need to Know About satellite radio
+</div>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="wave">〜</span> XMActive</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+      <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">📡 Complete Satellite Radio Guide</div>
+        <h1>Everything About <span class="accent">Satellite Radio</span> — The Complete Guide</h1>
+        <p>satellite radio, now part of the satellite radio service, is one of the world's largest satellite radio services. This guide covers how it works, what it offers, compatible devices, channel options, and much more.</p>
+        <div class="hero-stats">
+          <div class="hstat"><span class="num">150+</span><span class="lbl">Channels Available</span></div>
+          <div class="hstat"><span class="num">40M+</span><span class="lbl">Subscribers</span></div>
+          <div class="hstat"><span class="num">2001</span><span class="lbl">Year XM Launched</span></div>
+          <div class="hstat"><span class="num">50 mi.</span><span class="lbl">Coverage Altitude</span></div>
+        </div>
+      </div>
+      <img src="1.jpg" alt="satellite radio service" style="width:100%; border-radius:16px; max-height:420px; object-fit:cover;"/>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     AD SLOT TOP
+══════════════════════════════════════════════════ -->
+<div class="container">
+  <div class="ad-slot">
+<strong>Important:</strong> XM Radio Guide is an independent informational website. We are NOT affiliated with SiriusXM Holdings Inc., XM Satellite Radio, or any related company. This site does not sell subscriptions or provide customer support on behalf of SiriusXM.
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     WHAT IS XM RADIO
+══════════════════════════════════════════════════ -->
+<section class="section section-white" id="what-is">
+  <div class="container">
+    <div class="two-col">
+      <div class="article-body">
+        <span class="section-label">Introduction</span>
+        <h2 class="section-title">What Is Satellite Radio?</h2>
+        <p>satellite radio is a subscription-based satellite radio service that broadcasts hundreds of channels of music, news, sports, talk radio, comedy, and entertainment directly to specially equipped receivers via satellite signals from space. Unlike traditional AM or FM radio, satellite radio does not rely on local terrestrial broadcast towers — meaning its signal reaches across the entire continent with consistent, high-quality audio.</p>
+        <p>satellite radio was officially launched in September 2001 by the satellite radio company, and quickly grew to become one of the dominant forces in the satellite radio industry. In 2008, XM merged with its main competitor, a competing satellite radio provider, to form <strong>the satellite radio service</strong> — the combined entity that operates today and remains the largest satellite radio provider in North America.</p>
+        <p>The service is well known for its wide variety of content: from commercial-free music channels spanning every genre, to exclusive live sports broadcasts, celebrity-hosted shows, news from major networks, and much more. Subscribers pay a monthly or annual fee and can enjoy this content in their car, at home, or on mobile devices through dedicated apps.</p>
+
+        <div class="pullquote">
+          satellite radio changed the way people listen to audio entertainment by removing the barriers of geography and local broadcast limitations.
+        </div>
+
+        <h3>Key Characteristics of satellite radio</h3>
+        <ul>
+          <li>Broadcasts via satellites orbiting approximately 22,000 miles above Earth</li>
+          <li>Offers commercial-free music on the majority of music channels</li>
+          <li>Provides continuous nationwide coverage across the continental United States and Canada</li>
+          <li>Requires a subscription and a compatible receiver or the the satellite radio app</li>
+          <li>Includes exclusive content not available on traditional broadcast radio</li>
+        </ul>
+      </div>
+      <img src="2.jpg" alt="satellite radio receiver and car radio" style="width:100%; border-radius:16px; object-fit:cover;"/>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     HISTORY TIMELINE
+══════════════════════════════════════════════════ -->
+<section class="section section-bg" id="history">
+  <div class="container">
+    <span class="section-label">Background</span>
+    <h2 class="section-title">The History of Satellite Radio</h2>
+    <p class="section-sub">From a startup in the late 1990s to a continental broadcasting giant — here is how satellite radio grew into what it is today.</p>
+
+    <div class="two-col">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">1992</div>
+          <h4>FCC Allocates Satellite Radio Spectrum</h4>
+          <p>The Federal Communications Commission (FCC) allocates a portion of the radio spectrum specifically for digital audio radio services (DARS), paving the way for satellite radio as a commercial product.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1997</div>
+          <h4>the satellite radio service Founded</h4>
+          <p>the satellite radio company is founded and begins developing the infrastructure needed to broadcast audio signals from geostationary satellites across North America.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2001</div>
+          <h4>satellite radio Launches Commercially</h4>
+          <p>satellite radio officially launches its commercial service on September 25, 2001, initially available in two cities before rolling out nationally. The service launches with dozens of channels and quickly attracts its first subscribers.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2004</div>
+          <h4>Five Million Subscribers Reached</h4>
+          <p>satellite radio surpasses five million subscribers — a milestone that demonstrates strong demand for satellite radio as an alternative to traditional broadcast radio.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2007</div>
+          <h4>Merger Announced with satellite radio</h4>
+          <p>the satellite radio service and a competing satellite radio provider announce a proposed merger to combine their services into a single entity, citing the need to compete more effectively with other forms of digital entertainment.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2008</div>
+          <h4>the satellite radio service Is Born</h4>
+          <p>Following FCC approval, the merger is completed and the satellite radio service is formed. The combined company brings together the channel lineups, talent deals, and technology of both former competitors under one brand.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2013–Present</div>
+          <h4>Streaming Expansion & Growth</h4>
+          <p>the satellite radio service expands beyond in-car satellite reception with smartphone apps and streaming, allowing subscribers to listen anywhere. The service continues to grow, surpassing 40 million subscribers in North America.</p>
+        </div>
+      </div>
+      <!-- IMAGE SLOT 3 -->
+      <div style="display:flex; flex-direction:column; gap:22px;">
+        <img src="3.jpg" alt="satellite radio satellite in orbit" style="width:100%; border-radius:16px; object-fit:cover;"/>
+        <img src="1.jpg" alt="Early satellite radio receiver hardware" style="width:100%; border-radius:16px; margin-top:22px; object-fit:cover;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AD SLOT MID -->
+<div class="container">
+  <div class="ad-slot">
+    <p>Advertisement</p>
+    [ Ad Unit — 728×90 or 336×280 Rectangle ]
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════════════ -->
+<section class="section section-white" id="how-it-works">
+  <div class="container">
+    <div class="two-col reverse">
+      <img src="4.jpg" alt="How satellite radio signal works diagram" style="width:100%; border-radius:16px; object-fit:cover;"/>
+      <div class="article-body">
+        <span class="section-label">Technology</span>
+        <h2 class="section-title">How Does Satellite Radio Work?</h2>
+        <p>satellite radio uses a network of geostationary satellites positioned approximately 22,000 miles above the Earth's equator to broadcast audio signals across a vast geographic area. Because geostationary satellites orbit at the same speed as Earth's rotation, they remain fixed in position relative to the ground — allowing a receiver to maintain a steady, uninterrupted connection.</p>
+
+        <h3>The Signal Path Explained</h3>
+        <p>The process of delivering audio from a studio to your car radio involves several steps working in concert:</p>
+        <ul>
+          <li><strong>Content creation</strong> — Programs, music, and talk shows are prepared at XM's broadcast studios in dedicated broadcast studios</li>
+          <li><strong>Uplink</strong> — The audio signal is digitally encoded and transmitted from ground-based uplink facilities up to the satellites in orbit</li>
+          <li><strong>Satellite relay</strong> — The satellites receive the uplinked signal and rebroadcast it back down to Earth across the coverage area</li>
+          <li><strong>Ground repeaters</strong> — In densely built urban areas where tall buildings might block the satellite signal, ground-based repeaters fill in coverage gaps</li>
+          <li><strong>Receiver decoding</strong> — Your XM-enabled radio receives the satellite signal, decodes it, and plays the audio through your speakers</li>
+        </ul>
+
+        <h3>Digital Audio Quality</h3>
+        <p>Unlike analog AM or FM broadcasts, satellite radio transmits audio in a digital format. This means the audio is encoded as digital data before transmission and decoded by the receiver, resulting in clearer sound quality that is free from the static, interference, and signal fade that can affect traditional radio broadcasts — especially in remote areas or during poor weather conditions.</p>
+
+        <div class="info-box">
+          📡 <strong>Good to know:</strong> satellite radio's satellite coverage spans the entire contiguous United States, Alaska, and most of Canada — which means you can drive coast to coast without ever losing your station.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     WHY CHOOSE XM — BENEFITS
+══════════════════════════════════════════════════ -->
+<section class="section section-bg">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:44px;">
+      <span class="section-label">Benefits</span>
+      <h2 class="section-title">Why People Choose satellite radio</h2>
+      <p class="section-sub" style="margin:0 auto;">satellite radio offers a listening experience that traditional broadcast radio simply cannot match.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="c-icon">🚗</div>
+        <h3>Nationwide Coverage</h3>
+        <p>Drive from New York to Los Angeles without losing your station. satellite radio's satellite network blankets the entire continental United States and most of Canada with consistent signal coverage.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🎵</div>
+        <h3>Commercial-Free Music</h3>
+        <p>The majority of satellite radio's music channels are completely commercial-free. Listen to hours of uninterrupted music without a single advertisement break interrupting your favourite songs.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">📻</div>
+        <h3>150+ Channels</h3>
+        <p>From classical music and jazz to hip-hop, country, pop, rock, reggae, and everything in between — satellite radio's channel lineup is broader than any local FM market could offer.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🏈</div>
+        <h3>Live Sports Coverage</h3>
+        <p>Catch live play-by-play commentary for professional football, professional basketball, professional baseball, professional hockey, auto racing, college sports, and more — including games that are blacked out in your local market.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">📰</div>
+        <h3>News & Talk Radio</h3>
+        <p>Stay informed with around-the-clock news from major networks including major national and international news networks — available wherever you are.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🎙</div>
+        <h3>Exclusive Shows & Talent</h3>
+        <p>satellite radio features exclusive programming from well-known hosts, comedians, and personalities whose shows are not available anywhere else in broadcast radio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CHANNELS
+══════════════════════════════════════════════════ -->
+<section class="section section-white" id="channels">
+  <div class="container">
+    <span class="section-label">Programming</span>
+    <h2 class="section-title">Satellite Radio Channel Categories</h2>
+    <p class="section-sub">satellite radio organises its 150+ channels into clear categories so listeners can find exactly what they're looking for.</p>
+
+    <img src="3.jpg" alt="satellite radio channel lineup" style="width:100%; border-radius:16px; margin-bottom:40px; max-height:260px; object-fit:cover;"/>
+
+    <div class="two-col" style="gap:40px; margin-bottom:48px;">
+      <div class="article-body">
+        <h3>Music Channels</h3>
+        <p>Music is at the heart of satellite radio's offering. The service hosts dozens of genre-specific music channels, each curated by expert programmers and — on premium tiers — entirely free of commercial breaks. Whether you listen to classic rock, contemporary pop, country, R&B, electronic, jazz, blues, classical, or Latin music, there is a dedicated XM channel for it.</p>
+        <p>Many channels are also formatted around specific eras — you can find dedicated stations for music from the 1960s, 1970s, 1980s, and 1990s, allowing listeners to relive the sounds of any decade they enjoy.</p>
+      </div>
+      <div class="article-body">
+        <h3>Talk, News & Sports</h3>
+        <p>Beyond music, satellite radio carries an extensive lineup of talk radio, covering politics, culture, health, business, and entertainment. News channels from major broadcasters provide 24/7 coverage of global and national events.</p>
+        <p>Sports programming is particularly popular — live game broadcasts, analysis shows, call-in programs, and dedicated channels for specific leagues and teams give sports fans access to content they cannot find on standard radio.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-bottom:20px; font-family:'Segoe UI',system-ui,Arial,sans-serif; font-size:1.1rem; color:var(--navy2);">Sample Channel Lineup</h3>
+    <div class="cards-grid">
+      <div class="channel-card">
+        <div class="ch-num">Ch 4</div>
+        <div><h4>Classic Era Music</h4><p>Big band, swing, and classic American standards from the 1940s era.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 6</div>
+        <div><h4>Golden Age Classics</h4><p>Dedicated to the greatest hits and classic pop of the 1940s.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 14</div>
+        <div><h4>Seventies Hits</h4><p>The definitive soundtrack of the 1970s — rock, soul, pop and disco.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 28</div>
+        <div><h4>Deep Tracks Classic</h4><p>Deep tracks and classic rock from the 1970s and early 1980s.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 52</div>
+        <div><h4>New Country Hits</h4><p>New country music, emerging artists, and today's hottest country hits.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 78</div>
+        <div><h4>Professional Football Radio</h4><p>24/7 professional football coverage — news, analysis, live games, and call-in shows.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 87</div>
+        <div><h4>a national news network</h4><p>Round-the-clock national and international news coverage from a national news network.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 122</div>
+        <div><h4>Comedy Greats</h4><p>Classic stand-up comedy performances from legendary comedians.</p></div>
+      </div>
+      <div class="channel-card">
+        <div class="ch-num">Ch 183</div>
+        <div><h4>international news broadcasting</h4><p>International news and documentary programming from the international news.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AD SLOT -->
+<div class="container">
+  <div class="ad-slot">
+    <p>Advertisement</p>
+    [ Ad Unit — 728×90 or 336×280 Rectangle ]
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     XM vs FM COMPARISON
+══════════════════════════════════════════════════ -->
+<section class="section section-bg">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:40px;">
+      <span class="section-label">Comparison</span>
+      <h2 class="section-title">Satellite Radio vs Traditional FM Radio</h2>
+      <p class="section-sub" style="margin:0 auto;">How does satellite radio compare to the free FM radio you already have access to?</p>
+    </div>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>satellite radio (the satellite radio service)</th>
+          <th>Traditional FM Radio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Cost</strong></td>
+          <td>Monthly/annual subscription required</td>
+          <td>Free to listen</td>
+        </tr>
+        <tr>
+          <td><strong>Coverage Area</strong></td>
+          <td>Nationwide — coast to coast, no signal loss</td>
+          <td>Local — typically 30–60 mile radius per station</td>
+        </tr>
+        <tr>
+          <td><strong>Number of Channels</strong></td>
+          <td>150+ channels across all genres</td>
+          <td>Limited to stations in your local market</td>
+        </tr>
+        <tr>
+          <td><strong>Commercials</strong></td>
+          <td><span class="chk">✓</span> Commercial-free on most music channels</td>
+          <td><span class="crs">✗</span> Heavy commercial interruption</td>
+        </tr>
+        <tr>
+          <td><strong>Audio Quality</strong></td>
+          <td>Digital — clear, consistent audio</td>
+          <td>Analog — subject to static and interference</td>
+        </tr>
+        <tr>
+          <td><strong>Live Sports</strong></td>
+          <td><span class="chk">✓</span> Exclusive league and team broadcasts</td>
+          <td>Limited — only locally broadcast games</td>
+        </tr>
+        <tr>
+          <td><strong>Talk & News</strong></td>
+          <td>24/7 from major national & international outlets</td>
+          <td>Local talk stations only</td>
+        </tr>
+        <tr>
+          <td><strong>Streaming Access</strong></td>
+          <td><span class="chk">✓</span> Available via app on all devices</td>
+          <td>Many FM stations offer free streaming apps</td>
+        </tr>
+        <tr>
+          <td><strong>Exclusive Content</strong></td>
+          <td><span class="chk">✓</span> Celebrity shows, exclusive channels</td>
+          <td><span class="crs">✗</span> No exclusive national content</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     COMPATIBLE DEVICES
+══════════════════════════════════════════════════ -->
+<section class="section section-white" id="devices">
+  <div class="container">
+    <span class="section-label">Hardware</span>
+    <h2 class="section-title">Compatible Devices & How to Listen</h2>
+    <p class="section-sub">satellite radio can be enjoyed in a wide variety of ways — whether you're driving, at home, or on the move.</p>
+
+    <img src="4.jpg" alt="satellite radio compatible devices" style="width:100%; border-radius:16px; margin-bottom:40px; max-height:240px; object-fit:cover;"/>
+
+    <div class="cards-grid-4" style="margin-bottom:48px;">
+      <div class="device-tile">
+        <div class="d-icon">🚗</div>
+        <h4>Factory Car Radio</h4>
+        <p>Most new vehicles sold in North America come with the satellite radio service capability built directly into the factory-installed radio.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">📻</div>
+        <h4>Aftermarket Receiver</h4>
+        <p>Standalone XM receivers can be added to any vehicle that doesn't have built-in satellite radio capability.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">🏠</div>
+        <h4>Home Receivers</h4>
+        <p>Dedicated home radios and dock-and-play units let you enjoy satellite radio through your home audio system.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">📱</div>
+        <h4>the satellite radio service App</h4>
+        <p>Stream all your XM channels on your smartphone or tablet using the official the satellite radio app for iOS and Android devices.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">💻</div>
+        <h4>Web Browser</h4>
+        <p>Access the full channel lineup from any computer through the the satellite radio service website — no special hardware required.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">📺</div>
+        <h4>Smart TV</h4>
+        <p>The the satellite radio app is available on several smart TV platforms, including a streaming device and a streaming device devices.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">🔊</div>
+        <h4>Smart Speakers</h4>
+        <p>Listen via a voice assistant and a voice assistant-enabled smart speakers by simply asking for your favourite XM channel.</p>
+      </div>
+      <div class="device-tile">
+        <div class="d-icon">⌚</div>
+        <h4>Wearables</h4>
+        <p>Some smartwatches and wearable devices support the the satellite radio app for hands-free, on-the-go listening.</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="article-body">
+        <h3>satellite radio in Your Car</h3>
+        <p>The car is where most satellite radio subscribers do their listening. Since the early 2000s, satellite radio antennas and receivers have been integrated into vehicle dashboards, making activation as simple as subscribing to a plan and turning on the radio.</p>
+        <p>Today, the vast majority of new cars sold in the United States and Canada include a trial period of the satellite radio service service, giving buyers a chance to experience satellite radio before deciding whether to continue with a paid subscription.</p>
+        <p>Even older vehicles can be equipped with satellite radio through an aftermarket receiver — a small device that typically mounts on the dashboard and connects to the car's existing audio system via an FM transmitter or auxiliary cable.</p>
+      </div>
+      <img src="2.jpg" alt="Car dashboard with the satellite radio service display" style="width:100%; border-radius:16px; object-fit:cover;"/>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SUBSCRIPTION PLANS
+══════════════════════════════════════════════════ -->
+<section class="section section-bg" id="plans">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:44px;">
+      <span class="section-label">Pricing</span>
+      <h2 class="section-title">satellite radio Subscription Plans — Overview</h2>
+      <p class="section-sub" style="margin:0 auto;">the satellite radio service offers several tiers of subscription to match different listening habits and budgets. Prices shown are approximate — always check the official the satellite radio service website for the latest offers and promotions.</p>
+    </div>
+
+    <div class="plans-grid" style="grid-template-columns: repeat(4,1fr);">
+      <div class="plan-card">
+        <h3>Streaming Plan</h3>
+        <div class="plan-price">$9.99 <span>/ month</span></div>
+        <div class="plan-note">Stream only — no satellite receiver needed</div>
+        <ul>
+          <li>Access via app and web browser</li>
+          <li>Full music channel lineup</li>
+          <li>News and talk channels</li>
+          <li>On-demand content library</li>
+          <li>No car hardware required</li>
+        </ul>
+        <a href="xm-radio-guide.html" target="_blank" rel="noopener noreferrer" class="btn-plan outline">View on the satellite radio service →</a>
+      </div>
+
+      <div class="plan-card featured">
+        <div class="plan-badge">Most Popular</div>
+        <h3>Standard Plan</h3>
+        <div class="plan-price">$17.99 <span>/ month</span></div>
+        <div class="plan-note">In-car satellite + streaming included</div>
+        <ul>
+          <li>In-car satellite radio reception</li>
+          <li>Streaming via app and web</li>
+          <li>150+ channels including sports</li>
+          <li>Live play-by-play sports broadcasts</li>
+          <li>News and entertainment channels</li>
+        </ul>
+        <a href="xm-radio-guide.html" target="_blank" rel="noopener noreferrer" class="btn-plan">View on the satellite radio service →</a>
+      </div>
+
+      <div class="plan-card">
+        <h3>Platinum Plan</h3>
+        <div class="plan-price">$22.99 <span>/ month</span></div>
+        <div class="plan-note">Maximum content — all channels included</div>
+        <ul>
+          <li>Everything in Select plan</li>
+          <li>All premium and exclusive channels</li>
+          <li>exclusive celebrity talk channels</li>
+          <li>Every sport on every device</li>
+          <li>Enhanced streaming quality</li>
+        </ul>
+        <a href="xm-radio-guide.html" target="_blank" rel="noopener noreferrer" class="btn-plan outline">View on the satellite radio service →</a>
+      </div>
+
+      <div class="plan-card">
+        <h3>Family Plan</h3>
+        <div class="plan-price">$26.99 <span>/ month</span></div>
+        <div class="plan-note">Whole household — multiple streams</div>
+        <ul>
+          <li>Up to 4 simultaneous streams</li>
+          <li>Full channel lineup for all members</li>
+          <li>Parental controls available</li>
+          <li>Streaming on all devices</li>
+          <li>Best value for households</li>
+        </ul>
+        <a href="xm-radio-guide.html" target="_blank" rel="noopener noreferrer" class="btn-plan outline">View on the satellite radio service →</a>
+      </div>
+    </div>
+
+    <p class="price-disclaimer">⚠️ Prices shown are approximate and for reference only — actual prices may differ. Always visit <a href="xm-radio-guide.html" target="_blank" rel="noopener noreferrer">xmactive.com</a> for current pricing, promotional offers, and full plan details. This page is an independent informational resource and is not affiliated with the satellite radio service.</p>
+  </div>
+</section>
+
+<!-- AD SLOT -->
+<div class="container">
+  <div class="ad-slot">
+    <p>Advertisement</p>
+    [ Ad Unit — 728×90 or 300×250 ]
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     HOW TO GET STARTED
+══════════════════════════════════════════════════ -->
+<section class="section section-white">
+  <div class="container">
+    <div class="two-col">
+      <div class="article-body">
+        <span class="section-label">Getting Started</span>
+        <h2 class="section-title">How to Start Listening to satellite radio</h2>
+        <p>Getting started with satellite radio is straightforward. Whether you want to listen in your car, at home, or on your phone, the process follows a few simple steps.</p>
+
+        <h3>Option 1 — If Your Car Already Has the satellite radio service</h3>
+        <p>Many new and recent-model vehicles come with the satellite radio service hardware already installed, often with a free trial pre-activated. To continue service after the trial:</p>
+        <ul>
+          <li>Visit xmactive.com or call the satellite radio service directly</li>
+          <li>Provide your vehicle's Radio ID (found on the radio display or in the owner's manual)</li>
+          <li>Choose a subscription plan and enter your payment details</li>
+          <li>Your car radio will activate within minutes</li>
+        </ul>
+
+        <h3>Option 2 — Adding XM to an Older Vehicle</h3>
+        <p>For vehicles without built-in the satellite radio service capability, you can purchase an aftermarket receiver. These devices are available at electronics retailers and automotive stores. The receiver connects to your existing car audio system and includes a small antenna that mounts on the outside of your vehicle to receive the satellite signal.</p>
+
+        <h3>Option 3 — Stream on Your Phone or Computer</h3>
+        <p>If you only want to stream — without any in-car satellite reception — you can simply download the the satellite radio app on your smartphone, tablet, or computer. A streaming-only subscription is typically available at a lower monthly rate than plans that include satellite reception.</p>
+      </div>
+      <img src="3.jpg" alt="Setting up satellite radio on a smartphone" style="width:100%; border-radius:16px; object-fit:cover;"/>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SPORTS ON XM
+══════════════════════════════════════════════════ -->
+<section class="section section-dark">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:44px;">
+      <span class="section-label">Sports</span>
+      <h2 class="section-title" style="color:#fff;">Live Sports Coverage</h2>
+      <p class="section-sub" style="margin:0 auto;">One of the most popular reasons people subscribe to satellite radio is the access it provides to live sports broadcasts that are unavailable on local FM radio.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="c-icon">🏈</div>
+        <h3>Professional Football</h3>
+        <p>Every professional football regular season and playoff game is available on the satellite radio service, including exclusive coverage of the the championship game. Home and away team broadcasts are available so you can always hear your team's call.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">⚾</div>
+        <h3>Professional Baseball</h3>
+        <p>Catch every Major League Baseball game throughout the regular season and postseason, with home and away broadcasts giving fans access to their favourite team's announcers no matter where they are.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🏀</div>
+        <h3>Professional Basketball</h3>
+        <p>Live professional basketball game coverage, including play-by-play commentary, halftime analysis, and post-game shows — all available throughout the season and playoffs on dedicated the satellite radio service professional basketball channels.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🏒</div>
+        <h3>Professional Hockey</h3>
+        <p>the satellite radio service broadcasts professional hockey games throughout the regular season and the championship trophy playoffs, with coverage from both home and away broadcast teams giving hockey fans a complete listening experience.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🏁</div>
+        <h3>Auto Racing</h3>
+        <p>In-car communication audio, live race broadcasts, and expert analysis make the satellite radio service a must-have for auto racing fans who want to experience the full atmosphere of each race weekend.</p>
+      </div>
+      <div class="card">
+        <div class="c-icon">🎓</div>
+        <h3>College Sports</h3>
+        <p>Coverage of major college football and basketball from conferences across the country, including bowl games, the college basketball tournament, and rivalry matchups not covered by local radio stations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════════ -->
+<section class="section section-white" id="faq">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:40px;">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-sub" style="margin:0 auto;">Answers to the questions people ask most often about satellite radio and the satellite radio service.</p>
+    </div>
+    <div class="faq-wrap">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Is satellite radio and the satellite radio service the same thing? <span class="arrow">▼</span></button>
+        <div class="faq-a">Yes. satellite radio and a competing satellite radio provider merged in 2008 to form the satellite radio service, which now operates as a single service. Today, "satellite radio" refers to the satellite radio service provided under the the satellite radio service brand. The terms are often used interchangeably, though the satellite radio service is the current official company name and brand.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do I need a special radio to receive satellite radio? <span class="arrow">▼</span></button>
+        <div class="faq-a">To receive the satellite signal in your car, you need a the satellite radio service-enabled receiver — either a factory-installed one (included in most modern vehicles) or an aftermarket device. However, if you only want to stream XM content via the internet, you simply need the the satellite radio app on your smartphone, tablet, or computer — no special hardware required.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I listen to satellite radio for free? <span class="arrow">▼</span></button>
+        <div class="faq-a">A paid subscription is required for regular satellite radio access. However, the satellite radio service frequently offers free trial periods — particularly for new vehicle owners who receive a complimentary trial when they purchase a car. the satellite radio service also occasionally offers promotional free listening weekends where anyone can sample the service without subscribing.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Does satellite radio work everywhere in the country? <span class="arrow">▼</span></button>
+        <div class="faq-a">satellite radio's satellite signal covers the entire contiguous United States, Alaska, and most of Canada. Coverage is generally very consistent outdoors. In areas with tall buildings, tunnels, or dense tree cover, the satellite signal may occasionally be interrupted. Ground-based repeaters are placed in major cities to help fill in coverage gaps, and if you have internet connectivity, the streaming app maintains continuous playback.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How many devices can I use with one the satellite radio service subscription? <span class="arrow">▼</span></button>
+        <div class="faq-a">This depends on your subscription plan. Most plans include both in-car satellite reception and streaming access on one device at a time via the app. Some plans allow streaming on multiple devices simultaneously. Check the current plan details on the the satellite radio service website for the most up-to-date information on simultaneous streams per plan.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How do I cancel my satellite radio subscription? <span class="arrow">▼</span></button>
+        <div class="faq-a">the satellite radio service subscriptions can be cancelled by contacting the satellite radio service customer service directly by phone or online through your account settings at xmactive.com. Note that the satellite radio service subscriptions do not automatically cancel — you need to actively request cancellation. Check the the satellite radio service website for the current cancellation process and any terms that may apply to your plan.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What is the difference between satellite radio and internet radio? <span class="arrow">▼</span></button>
+        <div class="faq-a">Satellite radio (like satellite radio) delivers its signal from satellites in orbit and requires a specialised receiver — it works without an internet connection, making it ideal for in-car use in areas with poor or no mobile data coverage. Internet radio streams audio over a Wi-Fi or mobile data connection and works on any internet-connected device but requires a steady data connection to function without interruption.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Does satellite radio have ads? <span class="arrow">▼</span></button>
+        <div class="faq-a">Most music channels on satellite radio are commercial-free — this is one of the service's most widely appreciated features. However, some non-music channels such as news, sports talk, and certain entertainment channels do carry advertising, as is typical for that type of broadcast content. The commercial-free status applies primarily to curated music programming.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I get satellite radio outside the United States? <span class="arrow">▼</span></button>
+        <div class="faq-a">the satellite radio service's satellite signal covers the United States and most of Canada. For listeners outside this coverage area, the the satellite radio service streaming app may work in additional countries depending on content licensing agreements. However, some channels may not be available outside North America due to broadcast rights restrictions. Check the the satellite radio service website for the latest information on international availability.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AD SLOT BOTTOM -->
+<div class="container">
+  <div class="ad-slot">
+    <p>Advertisement</p>
+    [ Ad Unit — 728×90 Footer Banner ]
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="color:#fff; font-size:1.15rem; font-weight:700; font-family:'Segoe UI',system-ui,Arial,sans-serif;">〜 XMActive</div>
+        <p>An independent informational resource about satellite radio and the the satellite radio service satellite radio service. This site is not affiliated with the satellite radio service or any related company.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="#what-is">What Is satellite radio</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#channels">Channels</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#devices">Compatible Devices</a></li>
+          <li><a href="#plans">Subscription Plans</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Official</h4>
+        <ul>
+          <li><a href="https://www.siriusxm.com/" target="_blank" rel="noopener noreferrer">the satellite radio service Official Site</a></li>
+          <li><a href="contact.html" target="_blank" rel="noopener noreferrer">View Plans & Pricing</a></li>
+          <li><a href="contact.html" target="_blank" rel="noopener noreferrer">the satellite radio service Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="yr"></span> XMActive. All rights reserved.
+      <div class="footer-disclaimer">
+        <strong>Disclaimer:</strong> This website is an independent informational resource and is not affiliated with, endorsed by, or sponsored by the satellite radio service, the satellite radio service, or any related company. All brand names, trademarks, and registered trademarks are the property of their respective owners and are used here for informational reference only. Subscription prices, plan names, and channel availability are subject to change — always visit the official the satellite radio service website for current information.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const answer = btn.nextElementSibling;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-a').classList.remove('open');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+</script>
+
+</body>
+</html>
